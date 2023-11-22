@@ -494,6 +494,11 @@ void setup() {
 
   // Start streaming web server
   startCameraServer();
+
+  //send it's ready singal
+  digitalWrite(LED_BUILTIN, 1);
+  delay(3000);
+  digitalWrite(LED_BUILTIN, 0);
 }
 
 void loop() {
